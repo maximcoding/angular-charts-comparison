@@ -1,0 +1,35 @@
+<div class="flex-row">
+  <div>
+    <p>Pie</p>
+    <fusioncharts
+      [chartConfig]="fusionChartConfig"
+      [type]="FusionChartEnum.pie2d"
+      [dataSource]="pieData"
+    >
+    </fusioncharts>
+  </div>
+  <div>
+    <p>Doughnut</p>
+    <fusioncharts
+      [chartConfig]="fusionChartConfig"
+      [type]="FusionChartEnum.doughnut2d"
+      [dataSource]="doughnutData">
+    </fusioncharts>
+  </div>
+  <div>
+    <p>Doughnut - 3D</p>
+    <fusioncharts
+      [chartConfig]="fusionChartConfig"
+      [type]="FusionChartEnum.doughnut3d"
+      [dataSource]="doughnutData"
+    >
+    </fusioncharts>
+  </div>
+</div>
+<!--<p>Doughnut - Pie Nested Multi Level ( not working )</p>-->
+<!--<fusioncharts-->
+<!--  [chartConfig]="fusionChartConfig"-->
+<!--  [type]="FusionChartEnum.multilevelpie"-->
+<!--  [dataSource]="nestedPieData"-->
+<!--&gt;-->
+<!--</fusioncharts>-->

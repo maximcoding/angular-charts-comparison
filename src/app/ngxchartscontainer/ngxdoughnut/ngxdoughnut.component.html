@@ -1,0 +1,11 @@
+<ngx-charts-pie-chart
+[view]="[400, 300]"
+[results]="series"
+[legend]="true"
+[labels]="true"
+[doughnut]="true"
+[animations]="false"
+[legendPosition] = "'bottom'"
+[legendTitle]="''"
+[labelFormatting]="pieChartLabel.bind(this, series)">
+</ngx-charts-pie-chart>

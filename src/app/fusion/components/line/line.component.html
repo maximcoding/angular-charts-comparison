@@ -1,0 +1,25 @@
+<div class="flex-row">
+  <div>
+    <p>Line Chart- Single</p>
+    <fusioncharts
+      [chartConfig]="fusionChartConfig"
+      [type]="FusionChartEnum.line"
+      [dataSource]="dataSourceLine">
+    </fusioncharts>
+  </div>
+  <div>
+    <p>Line Chart - Multiple</p>
+    <fusioncharts [type]="FusionChartEnum.msline"
+                  [chartConfig]="fusionChartConfig"
+                  [dataSource]="dataSourceMultiple">
+    </fusioncharts>
+  </div>
+</div>
+
+<!--<p>Line Chart - Multiple Axes ( not working )</p>-->
+<!--<fusioncharts [type]="FusionChartEnum.multiaxisline"-->
+<!--              [chartConfig]="fusionChartConfig"-->
+<!--              [dataSource]="dataWithMultipleAxes">-->
+<!--</fusioncharts>-->
+
+

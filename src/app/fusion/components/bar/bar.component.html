@@ -1,0 +1,34 @@
+<div class="flex-row">
+  <div>
+    <p>Bar Chart -Simple</p>
+    <fusioncharts
+      [chartConfig]="fusionChartConfig"
+      [type]="FusionChartEnum.column2d"
+      [dataSource]="dataBarColumnSource">
+    </fusioncharts>
+  </div>
+  <div>
+    <p>Bar Chart - Grouped</p>
+    <fusioncharts
+      [chartConfig]="fusionChartConfig"
+      [dataSource]="dataBarGroupedSource"
+      [type]="FusionChartEnum.msbar2d"
+    ></fusioncharts>
+  </div>
+  <div>
+    <p>Bar Chart - with Annotations</p>
+    <fusioncharts
+      [chartConfig]="fusionChartConfig"
+      [dataSource]="dataBarStackerWithCustomLabelsSource"
+      [type]="FusionChartEnum.stackedbar2d"
+    ></fusioncharts>
+  </div>
+</div>
+
+<!--<p>Bar Chart - Overlapped Column ( not working )</p>-->
+<!--<fusioncharts-->
+<!--  [chartConfig]="fusionChartConfig"-->
+<!--  [dataSource]="dataBarOverlappedBarsSource"-->
+<!--  [type]="FusionChartEnum.overlappedcolumn2d"-->
+<!--&gt;</fusioncharts>-->
+

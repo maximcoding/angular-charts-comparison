@@ -1,0 +1,44 @@
+/* AppComponent's private CSS styles */
+
+.menu {
+  border-bottom: 1px solid #abcce0;
+  margin-bottom: 50px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #949797;
+  font-size: 12px;
+  font-family: "Chalkboard";
+  border-radius: 2px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  5px 5px 10px #dbdbdb,
+  -5px -5px 14px #ffffff;
+}
+
+nav a:hover {
+  color: #2cabe3;
+  background: #ffffff;
+}
+
+nav a.active {
+  color: #ffffff;
+  border-radius: 2px;
+  background: #07db75;
+  font-size: 12px;
+  box-shadow: inset 1px 1px 2px #ffffff,
+  inset -1px -1px 2px #ffffff;
+  border: 1px solid #d0e4ea;
+}
+
+.link {
+  margin: 10px;
+}
+
+

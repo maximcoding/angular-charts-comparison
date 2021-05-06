@@ -1,0 +1,42 @@
+<div class="flex-row">
+  <div>
+    <div>
+      <p>Stacked Graphs - Bar</p>
+      <fusioncharts
+        [chartConfig]="fusionConfig"
+        [dataSource]="stackedBarData"
+        [type]="FusionChartEnum.stackedbar2d"
+      >
+      </fusioncharts>
+    </div>
+    <div>
+      <p>Stacked Graphs - Columns</p>
+      <fusioncharts
+        [chartConfig]="fusionConfig"
+        [dataSource]="stackedColumnsData"
+        [type]="FusionChartEnum.stackedcolumn2d"
+      >
+      </fusioncharts>
+    </div>
+  </div>
+  <div>
+    <div>
+      <p>Stacked Graphs - Grouped Columns</p>
+      <fusioncharts
+        [chartConfig]="fusionConfig"
+        [dataSource]="groupedStackedData"
+        [type]="FusionChartEnum.msstackedcolumn2d"
+      >
+      </fusioncharts>
+    </div>
+    <div>
+      <p>Stacked Graphs - Columns Negative values</p>
+      <fusioncharts
+        [chartConfig]="fusionConfig"
+        [dataSource]="stackerNegativeColumnData"
+        [type]="FusionChartEnum.stackedcolumn2d"
+      >
+      </fusioncharts>
+    </div>
+  </div>
+</div>
